@@ -1,0 +1,46 @@
+﻿body 
+{
+    background-color:#FFFFCC;
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+input
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+    ime-mode : inactive;
+}
+
+select
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+dv
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+p
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+span
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+td
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}

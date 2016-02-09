@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtPW_AMT.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtARTICLE_ANT.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtSS_ARTICLE_ANT.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtPREPARATION_AMT.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtDIFF2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtCYCLE_TIME.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtJitsuKadouRitsu.OutputFormat" xml:space="preserve">
+    <value>#0.00</value>
+  </data>
+  <data name="txtJitsuKadouTime.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtTACT_TIME.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtJinteki.OutputFormat" xml:space="preserve">
+    <value>#0.00</value>
+  </data>
+  <data name="txtJintekiTime.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtSouSumJinteki.OutputFormat" xml:space="preserve">
+    <value>#0.00</value>
+  </data>
+  <data name="txtSouSumJitsuKadou.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtSouSumKadou.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txtSouSumJintekiTime.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtSumJintekiTime.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtSumJinteki.OutputFormat" xml:space="preserve">
+    <value>#0.00</value>
+  </data>
+  <data name="txtSumJitsuKadou.OutputFormat" xml:space="preserve">
+    <value>#,##0.00</value>
+  </data>
+  <data name="txtSumKadou.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="OleDBDataSource1.SQL" xml:space="preserve">
+    <value>SELECT J.GRP_NM AS GRP_NM1,K.GRP_NM AS GRP_NM2,B.M_PARTS_NO AS CATALOG_NO,A.COMPANY_NO,A.INDICATE_NO,B.C_NO,A.P_ORDER_MAIN ||','|| A.P_ORDER_SUB AS P_ORDER,
+C.PROCESS_CD,D.P_ORDER_NM,A.FACILITIES_CD,E.FACILITIES_NM,D.FACILITIES_G_CD,H.ITEM_NM AS FACILITIES_G_NM,
+A.WORKER_CD,F.WORKER_NM,B.PW_AMT,A.ARTICLE_ANT,A.SS_ARTICLE_ANT,A.PREPARATION_AMT,
+A.PREPARATION_ST_DT||','||A.PREPARATION_ST_TIME||','||A.PREPARATION_ED_DT||','||A.PREPARATION_ED_TIME AS DIFF1,
+A.WORK_ST_DT,A.WORK_ST_TIME,A.WORK_ED_DT,A.WORK_ED_TIME, 
+A.WORK_ST_DT||','||A.WORK_ST_TIME||','||A.WORK_ED_DT||','||A.WORK_ED_TIME DIFF2,NVL(L.CYCLE_TIME,0) as CYCLE_TIME,NVL(L.TACT_TIME,0) as TACT_TIME,
+TO_CHAR(NVL(G.PRODUCT_GRPNO1,0),'FM0000') || TO_CHAR(NVL(G.PRODUCT_GRPNO2,0),'FM0000') AS PRODUCT_GRP, G.PRODUCT_GRPNO1,E.WORK_TIME_KB 
+FROM (SELECT * FROM PROCESS_RESULTS_TBL ORDER BY COMPANY_NO,INDICATE_NO,P_ORDER_MAIN,P_ORDER_SUB) A,
+INDICATE_TBL B,PROCESS_PROGRESS_TBL C,PROCESS_MST D,FACILITIES_MST E,WORKER_MST F,PARTS_MST G,
+(SELECT TELL_CD,ITEM_NM FROM GENERAL_PURPOSE_TBL WHERE INFO_KB = 'MS025') H,
+(SELECT GRP_NO,GRP_NM FROM PRODUCT_GRP_MST WHERE GRP_LV = '1') J,
+(SELECT GRP_NO,GRP_NM FROM PRODUCT_GRP_MST WHERE GRP_LV = '2') K,
+(SELECT B.COMPANY_NO, A.P_ORDER_MAIN, A.P_ORDER_SUB, A.CYCLE_TIME, A.TACT_TIME FROM P_PROCESS_MST A, PARTS_MST B WHERE A.CATALOG_NO = B.CATALOG_NO(+)) L 
+WHERE (A.INDICATE_NO = B.INDICATE_NO(+) AND A.COMPANY_NO = B.COMPANY_NO(+)) 
+AND (A.INDICATE_NO = C.INDICATE_NO(+) AND A.COMPANY_NO = C.COMPANY_NO(+) AND A.P_ORDER_MAIN = C.P_ORDER_MAIN(+) AND A.P_ORDER_SUB = C.P_ORDER_SUB(+)) 
+AND C.PROCESS_CD = D.PROCESS_CD(+) AND A.FACILITIES_CD = E.FACILITIES_CD(+) AND A.WORKER_CD = F.WORKER_CD(+) 
+AND B.M_PARTS_NO = G.CATALOG_NO(+) AND G.PRODUCT_GRPNO1 = J.GRP_NO(+) AND G.PRODUCT_GRPNO2 = K.GRP_NO(+) AND D.FACILITIES_G_CD = H.TELL_CD(+) 
+AND (A.COMPANY_NO = L.COMPANY_NO(+) AND A.P_ORDER_MAIN = L.P_ORDER_MAIN(+) AND A.P_ORDER_SUB = L.P_ORDER_SUB(+)) 
+AND (A.WORK_ED_DT &gt;= '20100301' AND A.WORK_ED_DT &lt;= '20100305' ) 
+ORDER BY A.FACILITIES_CD,A.WORK_ST_DT,A.WORK_ST_TIME,B.M_PARTS_NO,A.INDICATE_NO
+</value>
+  </data>
+  <data name="$this.StyleSheet" xml:space="preserve">
+    <value>font-style: normal; font-variant: inherit; font-weight: normal; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 128; font-family: ＭＳ ゴシック; font-size: 8pt</value>
+  </data>
+</root>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

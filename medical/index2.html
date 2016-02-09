@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>index</title>
+<script type="text/javascript">
+<!--
+function opennew() {
+
+	var nWidth = 1024;
+	var nHeight = 768;
+
+	if(screen.availWidth < nWidth) nWidth = screen.availWidth;
+	if(screen.availHeight < nHeight) nHeight = screen.availHeight;
+	
+	nWidth -= 10;
+	//nHeight -= 50;
+	nHeight -= 30;
+	
+	objw =window.open("system/mdcllogin.aspx", null, "WIDTH=" + nWidth + ",HEIGHT=" + nHeight + ",SCROLLBARS=yes,RESIZABLE=no,TOOLBAR=no,MENUBAR=no,LOCATION=no,STATUS=no"); 
+
+//	objw =window.open("system/mdcllogin.aspx", null, "WIDTH="+(screen.availWidth-4)+",HEIGHT="+(screen.availHeight-23)+",SCROLLBARS=yes,RESIZABLE=no,TOOLBAR=no,MENUBAR=no,LOCATION=no,STATUS=no"); 
+
+	objw.moveTo(0,0); 
+	
+	window.opener = objw;
+	window.opener = window;
+	window.close();
+}
+// -->
+</script>
+</head>
+<body onload="opennew();">
+</body>
+</html>

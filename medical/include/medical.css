@@ -1,0 +1,70 @@
+﻿body 
+{
+    background-color:#F7F7F7;
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+input
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+    ime-mode : inactive;
+}
+
+select
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+dv
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+p
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+span
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+td
+{
+    font-size:10pt;
+    font-family:"ＭＳ ゴシック";
+}
+
+a.nav:link    { color: #F7F7F7; text-decoration:underline;}
+a.nav:visited { color: #F7F7F7; text-decoration:underline;}
+a.nav:hover   { color: #F7F7F7; text-decoration:underline;}
+a.nav:active  { color: #F7F7F7; text-decoration:underline;}
+
+.full
+{
+    ime-mode : active;
+}
+
+.head
+{
+    text-align:center;
+    color:#f7f7f7;
+    font-weight:bold;
+    background-color:#4e7e4a;
+}
+
+.detail
+{
+    text-align:left;
+    background-color:#d9ffcc;
+}

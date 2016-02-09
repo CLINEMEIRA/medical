@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txt四C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt五C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt六C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt七C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt八C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt九C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十一C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十二C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt一C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt二C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt三C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt上半TERM1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt下半TERM1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt四C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt五C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt六C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt七C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt八C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt九C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十一C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十二C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt一C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt二C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt三C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt上半TERM2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt下半TERM2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt半TERM合計1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt半TERM合計2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt四C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt五C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt六C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt七C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt八C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt九C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十一C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十二C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt一C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt二C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt三C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt上半TERM3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt下半TERM3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt半TERM合計3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt四C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt五C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt六C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt七C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt八C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt九C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十一C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt十二C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt一C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt二C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt三C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt上半TERM4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt下半TERM4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="txt半TERM合計4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox5.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox6.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox7.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox8.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox9.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox10.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox11.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox12.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox13.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox14.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox15.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox16.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox17.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox18.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox19.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox20.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox21.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox22.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox23.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox24.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox25.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox26.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox27.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox28.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox29.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox30.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox31.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox32.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox33.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox34.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox35.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox36.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox37.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox38.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox39.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox40.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox41.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox42.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox43.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox44.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox45.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox46.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox47.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox48.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox49.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox50.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox51.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox52.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox53.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox54.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox55.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox56.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox57.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox58.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox59.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="TextBox60.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum四C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum五C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum四C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum四C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum四C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum六C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum七C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum八C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum九C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十一C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十二C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum一C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum二C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum三C_MONTH1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum上半TERM1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum下半TERM1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum五C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum六C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum七C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum八C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum九C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十一C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十二C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum一C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum二C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum三C_MONTH2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum上半TERM2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum下半TERM2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum半TERM合計1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum半TERM合計2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum五C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum六C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum七C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum八C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum九C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十一C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十二C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum一C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum二C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum三C_MONTH3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum上半TERM3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum下半TERM3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum半TERM合計3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum五C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum六C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum七C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum八C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum九C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十一C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum十二C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum一C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum二C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum三C_MONTH4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum上半TERM4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum下半TERM4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="Sum半TERM合計4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="OleDBDataSource1.SQL" xml:space="preserve">
+    <value>SELECT 
+S1.CODE1 コード1,S1.NAME_1 名称1,S1.CODE2 コード2,S1.NAME_2 名称2,
+S1.SURPLUS_PLAN_04 AS 四C_MONTH1,S1.SURPLUS_PLAN_05 AS 五C_MONTH1,S1.SURPLUS_PLAN_06 AS 六C_MONTH1,S1.SURPLUS_PLAN_07 AS 七C_MONTH1,
+S1.SURPLUS_PLAN_08 AS 八C_MONTH1,S1.SURPLUS_PLAN_09 AS 九C_MONTH1,S1.SURPLUS_PLAN_10 AS 十C_MONTH1,S1.SURPLUS_PLAN_11 AS 十一C_MONTH1,
+S1.SURPLUS_PLAN_12 AS 十二C_MONTH1,S1.SURPLUS_PLAN_01 AS 一C_MONTH1,S1.SURPLUS_PLAN_02 AS 二C_MONTH1,S1.SURPLUS_PLAN_03 AS 三C_MONTH1,
+S1.SURPLUS_PLAN_HIGH AS 上半TERM1,S1.SURPLUS_PLAN_LOW AS 下半TERM1,S1.SURPLUS_PLAN_SUM AS 合計1,
+S2.SURPLUS_PLAN_04 AS 四C_MONTH2,S2.SURPLUS_PLAN_05 AS 五C_MONTH2,S2.SURPLUS_PLAN_06 AS 六C_MONTH2,S2.SURPLUS_PLAN_07 AS 七C_MONTH2,
+S2.SURPLUS_PLAN_08 AS 八C_MONTH2,S2.SURPLUS_PLAN_09 AS 九C_MONTH2,S2.SURPLUS_PLAN_10 AS 十C_MONTH2,S2.SURPLUS_PLAN_11 AS 十一C_MONTH2,
+S2.SURPLUS_PLAN_12 AS 十二C_MONTH2,S2.SURPLUS_PLAN_01 AS 一C_MONTH2,S2.SURPLUS_PLAN_02 AS 二C_MONTH2,S2.SURPLUS_PLAN_03 AS 三C_MONTH2,
+S2.SURPLUS_PLAN_HIGH AS 上半TERM2,S2.SURPLUS_PLAN_LOW AS 下半TERM2,S2.SURPLUS_PLAN_SUM AS 合計2,
+S3.SURPLUS_PLAN_04 AS 四C_MONTH3,S3.SURPLUS_PLAN_05 AS 五C_MONTH3,S3.SURPLUS_PLAN_06 AS 六C_MONTH3,S3.SURPLUS_PLAN_07 AS 七C_MONTH3,
+S3.SURPLUS_PLAN_08 AS 八C_MONTH3,S3.SURPLUS_PLAN_09 AS 九C_MONTH3,S3.SURPLUS_PLAN_10 AS 十C_MONTH3,S3.SURPLUS_PLAN_11 AS 十一C_MONTH3,
+S3.SURPLUS_PLAN_12 AS 十二C_MONTH3,S3.SURPLUS_PLAN_01 AS 一C_MONTH3,S3.SURPLUS_PLAN_02 AS 二C_MONTH3,S3.SURPLUS_PLAN_03 AS 三C_MONTH3,
+S3.SURPLUS_PLAN_HIGH AS 上半TERM3,S3.SURPLUS_PLAN_LOW AS 下半TERM3,S3.SURPLUS_PLAN_SUM AS 合計3,
+S4.SURPLUS_PLAN_04 AS 四C_MONTH4,S4.SURPLUS_PLAN_05 AS 五C_MONTH4,S4.SURPLUS_PLAN_06 AS 六C_MONTH4,S4.SURPLUS_PLAN_07 AS 七C_MONTH4,
+S4.SURPLUS_PLAN_08 AS 八C_MONTH4,S4.SURPLUS_PLAN_09 AS 九C_MONTH4,S4.SURPLUS_PLAN_10 AS 十C_MONTH4,S4.SURPLUS_PLAN_11 AS 十一C_MONTH4,
+S4.SURPLUS_PLAN_12 AS 十二C_MONTH4,S4.SURPLUS_PLAN_01 AS 一C_MONTH4,S4.SURPLUS_PLAN_02 AS 二C_MONTH4,S4.SURPLUS_PLAN_03 AS 三C_MONTH4,
+S4.SURPLUS_PLAN_HIGH AS 上半TERM4,S4.SURPLUS_PLAN_LOW AS 下半TERM4,S4.SURPLUS_PLAN_SUM AS 合計4 
+FROM 
+(SELECT * FROM WK_RESULTS_CONTRAST WHERE KB = '1') S1,
+(SELECT * FROM WK_RESULTS_CONTRAST WHERE KB = '2') S2,
+(SELECT * FROM WK_RESULTS_CONTRAST WHERE KB = '3') S3,
+(SELECT * FROM WK_RESULTS_CONTRAST WHERE KB = '4') S4</value>
+  </data>
+  <data name="$this.StyleSheet" xml:space="preserve">
+    <value>font-family: MS UI Gothic; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 128</value>
+  </data>
+</root>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

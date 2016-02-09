@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="OleDBDataSource1.SQL" xml:space="preserve">
+    <value>SELECT B.O_CATALOG_NO,B.CATALOG_NO,B.WORK_STD_NO,A.COMPANY_NO,A.INDICATE_NO,C.C_NO,C.OEM_FLG,C.FIRST_KB,C.USE_ORG_PARTS_NO,C.ORIGIN_PARTS_NO,D.REN_NO,D.MATL_NM,D.MATL_SPEC,C.MATL_CD,C.DELIVERY_DT,C.COMP_NEED_AMT,C.STW_AMT,E.ITEM_NM テストピース,T.ITEM_NM 梱包ラベル,F.WORKER_ABB 着工者,G.WORKER_ABB 承認品管,H.WORKER_ABB 承認技術,I.WORKER_ABB 点検,J.WORKER_ABB 作成,K.COR_MARK COR_MARK2,L.COR_MARK COR_MARK1,M.COR_MARK COR_MARK4,N.COR_MARK COR_MARK3,O.COR_MARK COR_MARK5,P.UM_P_ORDER,P.P_ORDER_MAIN,P.P_ORDER_SUB,P.SHOP,Q.ITEM_NM 設備集約名称,R.P_ORDER_NM,S.ITEM_KN WORK_STD,P.WORK_COMMENT,L.COR_ARTICLE_NO,L.APPLY_DT,L.CREATOR_NM,L.RECOGNIZER_NM
+FROM PROCESS_F_TBL A,
+         PARTS_MST B,
+         INDICATE_TBL C,
+         MATL_MST D,
+         (SELECT TELL_CD,ITEM_NM FROM GENERAL_PURPOSE_TBL WHERE INFO_KB = 'MS005') E,
+         WORKER_MST F,
+         WORKER_MST G,
+         WORKER_MST H,
+         WORKER_MST I,
+         WORKER_MST J,
+         (SELECT CATALOG_NO,COR_MARK FROM V_N_REVISION_HIS WHERE REVISION_TYPE = '2' ) K,
+         (SELECT CATALOG_NO,COR_MARK,COR_ARTICLE_NO,APPLY_DT,CREATOR_NM,RECOGNIZER_NM FROM V_N_REVISION_HIS WHERE REVISION_TYPE = '1' ) L,
+         (SELECT PROSTD_NO,COR_MARK FROM V_N_REVISION_HIS WHERE REVISION_TYPE = '4' ) M,
+         (SELECT PROSTD_NO,COR_MARK FROM V_N_REVISION_HIS WHERE REVISION_TYPE = '3' ) N,
+         (SELECT PROSTD_NO,COR_MARK FROM V_N_REVISION_HIS WHERE REVISION_TYPE = '5' ) O,
+         (SELECT * FROM PROCESS_PROGRESS_TBL WHERE P_ORDER_MAIN &lt; 900) P,
+         (SELECT TELL_CD,ITEM_NM FROM GENERAL_PURPOSE_TBL WHERE INFO_KB = 'MS025') Q,
+         PROCESS_MST R,
+         (SELECT TELL_CD,ITEM_KN FROM GENERAL_PURPOSE_TBL WHERE INFO_KB = 'MS027') S,
+         (SELECT TELL_CD,ITEM_NM FROM GENERAL_PURPOSE_TBL WHERE INFO_KB = 'MS006') T  
+WHERE A.CATALOG_NO = B.CATALOG_NO AND
+           (A.INDICATE_NO = C.INDICATE_NO AND A.COMPANY_NO = C.COMPANY_NO) AND
+           C.MATL_CD = D.MATL_CD(+) AND
+           B.TPERS_AMT = E.TELL_CD(+) AND
+           C.CRT_USR = F.WORKER_CD(+) AND
+           B.RECOGNIZER_QL = G.WORKER_CD(+) AND
+           B.RECOGNIZER_SK = H.WORKER_CD(+) AND
+           B.CHECKER = I.WORKER_CD(+) AND
+           B.CREATOR = J.WORKER_CD(+) AND
+           A.CATALOG_NO = K.CATALOG_NO(+) AND
+           A.CATALOG_NO = L.CATALOG_NO(+) AND
+           A.PROSTD_NO = M.PROSTD_NO(+) AND
+           A.PROSTD_NO = N.PROSTD_NO(+) AND
+           A.PROSTD_NO = O.PROSTD_NO(+) AND
+           (A.INDICATE_NO = P.INDICATE_NO AND A.COMPANY_NO = P.COMPANY_NO) AND
+           P.FACILITIES_G_CD = Q.TELL_CD(+) AND
+           P.PROCESS_CD = R.PROCESS_CD(+) AND
+           R.WORK_STD = S.TELL_CD(+) AND
+           B.PACKUP_KB = T.TELL_CD(+) AND 
+           A.INDICATE_NO = '71930' AND A.COMPANY_NO = '139873'
+ORDER BY P.P_ORDER_MAIN,P.P_ORDER_SUB</value>
+  </data>
+  <data name="$this.StyleSheet" xml:space="preserve">
+    <value>font-family: MS UI Gothic; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 128</value>
+  </data>
+</root>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

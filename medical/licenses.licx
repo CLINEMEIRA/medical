@@ -1,0 +1,7 @@
+C1.Web.Wijmo.Controls.C1Input.C1InputDate, C1.Web.Wijmo.Controls.4, Version=4.0.20153.223, Culture=neutral, PublicKeyToken=9b75583953471eea
+C1.Web.C1WebChart.C1WebChart, C1.Web.C1WebChart.4, Version=4.0.20153.110, Culture=neutral, PublicKeyToken=360971499c5cdc04
+GrapeCity.ActiveReports.SectionReport, GrapeCity.ActiveReports.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff
+GrapeCity.ActiveReports.PageReport, GrapeCity.ActiveReports.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff
+GrapeCity.ActiveReports.Export.Pdf.Section.PdfExport, GrapeCity.ActiveReports.Export.Pdf.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff
+GrapeCity.ActiveReports.Web.WebViewer, GrapeCity.ActiveReports.Web.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff
+GrapeCity.ActiveReports.Viewer.Win.Viewer, GrapeCity.ActiveReports.Viewer.Win.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff

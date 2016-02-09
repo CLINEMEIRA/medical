@@ -1,0 +1,1443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9434384D-A5F2-472D-80B4-09C6D7E8554D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>medical</RootNamespace>
+    <AssemblyName>medical</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>medical.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>medical.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>medical.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>medical.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="c1.web.c1webchart.4, Version=4.0.20153.110, Culture=neutral, PublicKeyToken=360971499c5cdc04, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="c1.web.wijmo.controls.4, Version=4.0.20153.223, Culture=neutral, PublicKeyToken=9b75583953471eea, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Chart.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Excel.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Html.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Image.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Rdf.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Export.Xaml.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Web.v9, Version=9.2.5098.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveReports.ReportService.asmx" />
+    <Content Include="image\aspx_file.gif" />
+    <Content Include="image\b_add.gif" />
+    <Content Include="image\b_alldel.gif" />
+    <Content Include="image\b_allins.gif" />
+    <Content Include="image\b_back.gif" />
+    <Content Include="image\b_cancel.gif" />
+    <Content Include="image\b_change.gif" />
+    <Content Include="image\b_clear.gif" />
+    <Content Include="image\b_close.gif" />
+    <Content Include="image\b_confirm.gif" />
+    <Content Include="image\b_copy.gif" />
+    <Content Include="image\b_create.gif" />
+    <Content Include="image\b_csv.gif" />
+    <Content Include="image\b_delete.gif" />
+    <Content Include="image\b_division.gif" />
+    <Content Include="image\b_extract.gif" />
+    <Content Include="image\b_extract_s.gif" />
+    <Content Include="image\b_history.gif" />
+    <Content Include="image\b_import.gif" />
+    <Content Include="image\b_import_s.gif" />
+    <Content Include="image\b_insert.gif" />
+    <Content Include="image\b_issue.gif" />
+    <Content Include="image\b_jclear.gif" />
+    <Content Include="image\b_jisseki.gif" />
+    <Content Include="image\b_jouken.gif" />
+    <Content Include="image\b_kakou.gif" />
+    <Content Include="image\b_kekka.gif" />
+    <Content Include="image\b_koutei.gif" />
+    <Content Include="image\b_kouteis.gif" />
+    <Content Include="image\b_list.gif" />
+    <Content Include="image\b_login.gif" />
+    <Content Include="image\b_match.gif" />
+    <Content Include="image\b_mdgty020a.gif" />
+    <Content Include="image\b_mdgty020b.gif" />
+    <Content Include="image\b_mdnyk030a.gif" />
+    <Content Include="image\b_mdnyk030b.gif" />
+    <Content Include="image\b_mdnyk040a.gif" />
+    <Content Include="image\b_mdnyk040b.gif" />
+    <Content Include="image\b_mdtyk020a.gif" />
+    <Content Include="image\b_mdtyk020b.gif" />
+    <Content Include="image\b_mdtyk040a.gif" />
+    <Content Include="image\b_mdtyk040b.gif" />
+    <Content Include="image\b_mdutl010.gif" />
+    <Content Include="image\b_mdzai030a.gif" />
+    <Content Include="image\b_mdzai030b.gif" />
+    <Content Include="image\b_new.gif" />
+    <Content Include="image\b_newest.gif" />
+    <Content Include="image\b_nextweek.gif" />
+    <Content Include="image\b_nouki.gif" />
+    <Content Include="image\b_print.gif" />
+    <Content Include="image\b_progress.gif" />
+    <Content Include="image\b_reissue.gif" />
+    <Content Include="image\b_reset.gif" />
+    <Content Include="image\b_run.gif" />
+    <Content Include="image\b_search.gif" />
+    <Content Include="image\b_seisei.gif" />
+    <Content Include="image\b_sort.gif" />
+    <Content Include="image\b_start.gif" />
+    <Content Include="image\b_tekiyou.gif" />
+    <Content Include="image\b_text.gif" />
+    <Content Include="image\b_thisweek.gif" />
+    <Content Include="image\b_tyakkou.gif" />
+    <Content Include="image\b_update.gif" />
+    <Content Include="image\b_Weekbefore.gif" />
+    <Content Include="image\folder.gif" />
+    <Content Include="image\i_calen.gif" />
+    <Content Include="image\i_cancel.gif" />
+    <Content Include="image\i_edit.gif" />
+    <Content Include="image\i_list.gif" />
+    <Content Include="image\i_sincyoku.gif" />
+    <Content Include="image\i_syousai.gif" />
+    <Content Include="image\line.gif" />
+    <Content Include="image\loader.gif" />
+    <Content Include="image\m_end.gif" />
+    <Content Include="image\m_logout.gif" />
+    <Content Include="image\m_menu.gif" />
+    <Content Include="image\spacer.gif" />
+    <Content Include="image\spacer25.gif" />
+    <Content Include="image\title.gif" />
+    <Content Include="image\t_delete.gif" />
+    <Content Include="image\t_error.gif" />
+    <Content Include="image\t_insert.gif" />
+    <Content Include="image\t_update.gif" />
+    <Content Include="image\t_update2.gif" />
+    <Content Include="include\AC_OETags.js" />
+    <Content Include="include\header.ascx" />
+    <Content Include="include\medical.css" />
+    <Content Include="include\medical.js" />
+    <Content Include="include\medicallist.css" />
+    <Content Include="include\medicallist.js" />
+    <Content Include="include\webviewer.js" />
+    <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="list\list.aspx" />
+    <Content Include="list\mdsrc000.aspx" />
+    <Content Include="list\mdsrc005.aspx" />
+    <Content Include="list\mdsrc010.aspx" />
+    <Content Include="list\mdsrc011.aspx" />
+    <Content Include="list\mdsrc020.aspx" />
+    <Content Include="list\mdsrc030.aspx" />
+    <Content Include="list\mdsrc030_55.aspx" />
+    <Content Include="list\mdsrc040.aspx" />
+    <Content Include="list\mdsrc050.aspx" />
+    <Content Include="list\mdsrc060.aspx" />
+    <Content Include="list\mdsrc060_55.aspx" />
+    <Content Include="list\mdsrc070.aspx" />
+    <Content Include="list\mdsrc071.aspx" />
+    <Content Include="list\mdsrc080.aspx" />
+    <Content Include="list\mdsrc081.aspx" />
+    <Content Include="list\mdsrc082.aspx" />
+    <Content Include="list\mdsrc090.aspx" />
+    <Content Include="list\mdsrc090_55.aspx" />
+    <Content Include="list\mdsrc091.aspx" />
+    <Content Include="list\mdsrc091_55.aspx" />
+    <Content Include="list\mdsrc100.aspx" />
+    <Content Include="list\mdsrc1001.aspx" />
+    <Content Include="list\mdsrc101.aspx" />
+    <Content Include="list\mdsrc1011.aspx" />
+    <Content Include="list\mdsrc120.aspx" />
+    <Content Include="list\mdsrc121.aspx" />
+    <Content Include="list\mdsrc122.aspx" />
+    <Content Include="list\mdsrc140.aspx" />
+    <Content Include="list\mdsrc141.aspx" />
+    <Content Include="list\mdsrc150.aspx" />
+    <Content Include="list\mdsrc160.aspx" />
+    <Content Include="list\mdsrc161.aspx" />
+    <Content Include="list\mdsrc163.aspx" />
+    <Content Include="list\mdsrc170.aspx" />
+    <Content Include="list\mdsrc175.aspx" />
+    <Content Include="list\mdsrc180.aspx" />
+    <Content Include="list\mdsrc190.aspx" />
+    <Content Include="list\mdsrc191.aspx" />
+    <Content Include="list\mdsrc200.aspx" />
+    <Content Include="list\mdsrc210.aspx" />
+    <Content Include="list\mdsrc220.aspx" />
+    <Content Include="list\mdsrc230.aspx" />
+    <Content Include="list\mdsrc240.aspx" />
+    <Content Include="list\mdsrc250.aspx" />
+    <Content Include="list\mdsrc260.aspx" />
+    <Content Include="list\mdsrc270.aspx" />
+    <Content Include="list\mdsrc285.aspx" />
+    <Content Include="master\Grapecity.ActiveReports.Flash.v9.Resources.swf" />
+    <Content Include="master\Grapecity.ActiveReports.Flash.v9.swf" />
+    <Content Include="master\mdmas010.aspx" />
+    <Content Include="master\mdmas020.aspx" />
+    <Content Include="master\mdmas025.aspx" />
+    <Content Include="master\mdmas030.aspx" />
+    <Content Include="master\mdmas035.aspx" />
+    <Content Include="master\mdmas037.aspx" />
+    <Content Include="master\mdmas040.aspx" />
+    <Content Include="master\mdmas045.aspx" />
+    <Content Include="master\mdmas050.aspx" />
+    <Content Include="master\mdmas055.aspx" />
+    <Content Include="master\mdmas060.aspx" />
+    <Content Include="master\mdmas0601.aspx" />
+    <Content Include="master\mdmas070.aspx" />
+    <Content Include="master\mdmas080.aspx" />
+    <Content Include="master\mdmas0801.aspx" />
+    <Content Include="master\mdmas090.aspx" />
+    <Content Include="master\mdmas0901.aspx" />
+    <Content Include="master\mdmas100.aspx" />
+    <Content Include="master\mdmas1001.aspx" />
+    <Content Include="master\mdmas110.aspx" />
+    <Content Include="master\mdmas1101.aspx" />
+    <Content Include="master\mdmas120.aspx" />
+    <Content Include="master\mdmas1201.aspx" />
+    <Content Include="master\mdmas130.aspx" />
+    <Content Include="master\mdmas140.aspx" />
+    <Content Include="master\mdmas1401.aspx" />
+    <Content Include="master\mdmas150.aspx" />
+    <Content Include="master\mdmas1501.aspx" />
+    <Content Include="master\mdmas152.aspx" />
+    <Content Include="master\mdmas155.aspx" />
+    <Content Include="master\mdmas160.aspx" />
+    <Content Include="master\mdmas170.aspx" />
+    <Content Include="master\mdmas1701.aspx" />
+    <Content Include="master\mdmas180.aspx" />
+    <Content Include="master\mdmas190.aspx" />
+    <Content Include="master\mdmas200.aspx" />
+    <Content Include="master\mdmas210.aspx" />
+    <Content Include="master\WebForm4.aspx" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="system\mdclalarm.aspx" />
+    <Content Include="system\mdclerror.aspx" />
+    <Content Include="system\mdcllogin.aspx" />
+    <Content Include="system\mdcllogout.aspx" />
+    <Content Include="system\mdclmenu.aspx" />
+    <Content Include="system\mdclpassword.aspx" />
+    <Content Include="system\mderror.aspx" />
+    <Content Include="temp\dummy.html" />
+    <Content Include="temp\refresh.aspx" />
+    <Content Include="utility\mdutl010.aspx" />
+    <Content Include="utility\mdutl0101.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="include\header.ascx.designer.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="list\list.aspx.designer.vb">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\list.aspx.vb">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc000.aspx.designer.vb">
+      <DependentUpon>mdsrc000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc000.aspx.vb">
+      <DependentUpon>mdsrc000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc005.aspx.designer.vb">
+      <DependentUpon>mdsrc005.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc005.aspx.vb">
+      <DependentUpon>mdsrc005.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc010.aspx.designer.vb">
+      <DependentUpon>mdsrc010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc010.aspx.vb">
+      <DependentUpon>mdsrc010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc011.aspx.designer.vb">
+      <DependentUpon>mdsrc011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc011.aspx.vb">
+      <DependentUpon>mdsrc011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc020.aspx.designer.vb">
+      <DependentUpon>mdsrc020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc020.aspx.vb">
+      <DependentUpon>mdsrc020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc030.aspx.designer.vb">
+      <DependentUpon>mdsrc030.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc030.aspx.vb">
+      <DependentUpon>mdsrc030.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc030_55.aspx.designer.vb">
+      <DependentUpon>mdsrc030_55.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc030_55.aspx.vb">
+      <DependentUpon>mdsrc030_55.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc040.aspx.designer.vb">
+      <DependentUpon>mdsrc040.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc040.aspx.vb">
+      <DependentUpon>mdsrc040.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc050.aspx.designer.vb">
+      <DependentUpon>mdsrc050.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc050.aspx.vb">
+      <DependentUpon>mdsrc050.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc060.aspx.designer.vb">
+      <DependentUpon>mdsrc060.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc060.aspx.vb">
+      <DependentUpon>mdsrc060.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc060_55.aspx.designer.vb">
+      <DependentUpon>mdsrc060_55.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc060_55.aspx.vb">
+      <DependentUpon>mdsrc060_55.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc070.aspx.designer.vb">
+      <DependentUpon>mdsrc070.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc070.aspx.vb">
+      <DependentUpon>mdsrc070.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc071.aspx.designer.vb">
+      <DependentUpon>mdsrc071.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc071.aspx.vb">
+      <DependentUpon>mdsrc071.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc080.aspx.designer.vb">
+      <DependentUpon>mdsrc080.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc080.aspx.vb">
+      <DependentUpon>mdsrc080.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc081.aspx.designer.vb">
+      <DependentUpon>mdsrc081.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc081.aspx.vb">
+      <DependentUpon>mdsrc081.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc082.aspx.designer.vb">
+      <DependentUpon>mdsrc082.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc082.aspx.vb">
+      <DependentUpon>mdsrc082.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc090.aspx.designer.vb">
+      <DependentUpon>mdsrc090.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc090.aspx.vb">
+      <DependentUpon>mdsrc090.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc090_55.aspx.designer.vb">
+      <DependentUpon>mdsrc090_55.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc090_55.aspx.vb">
+      <DependentUpon>mdsrc090_55.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc091.aspx.designer.vb">
+      <DependentUpon>mdsrc091.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc091.aspx.vb">
+      <DependentUpon>mdsrc091.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc091_55.aspx.designer.vb">
+      <DependentUpon>mdsrc091_55.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc091_55.aspx.vb">
+      <DependentUpon>mdsrc091_55.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc100.aspx.designer.vb">
+      <DependentUpon>mdsrc100.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc100.aspx.vb">
+      <DependentUpon>mdsrc100.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc1001.aspx.designer.vb">
+      <DependentUpon>mdsrc1001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc1001.aspx.vb">
+      <DependentUpon>mdsrc1001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc101.aspx.designer.vb">
+      <DependentUpon>mdsrc101.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc101.aspx.vb">
+      <DependentUpon>mdsrc101.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc1011.aspx.designer.vb">
+      <DependentUpon>mdsrc1011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc1011.aspx.vb">
+      <DependentUpon>mdsrc1011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc120.aspx.designer.vb">
+      <DependentUpon>mdsrc120.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc120.aspx.vb">
+      <DependentUpon>mdsrc120.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc121.aspx.designer.vb">
+      <DependentUpon>mdsrc121.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc121.aspx.vb">
+      <DependentUpon>mdsrc121.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc122.aspx.designer.vb">
+      <DependentUpon>mdsrc122.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc122.aspx.vb">
+      <DependentUpon>mdsrc122.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc140.aspx.designer.vb">
+      <DependentUpon>mdsrc140.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc140.aspx.vb">
+      <DependentUpon>mdsrc140.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc141.aspx.designer.vb">
+      <DependentUpon>mdsrc141.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc141.aspx.vb">
+      <DependentUpon>mdsrc141.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc150.aspx.designer.vb">
+      <DependentUpon>mdsrc150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc150.aspx.vb">
+      <DependentUpon>mdsrc150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc160.aspx.designer.vb">
+      <DependentUpon>mdsrc160.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc160.aspx.vb">
+      <DependentUpon>mdsrc160.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc161.aspx.designer.vb">
+      <DependentUpon>mdsrc161.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc161.aspx.vb">
+      <DependentUpon>mdsrc161.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc163.aspx.designer.vb">
+      <DependentUpon>mdsrc163.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc163.aspx.vb">
+      <DependentUpon>mdsrc163.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc170.aspx.designer.vb">
+      <DependentUpon>mdsrc170.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc170.aspx.vb">
+      <DependentUpon>mdsrc170.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc175.aspx.designer.vb">
+      <DependentUpon>mdsrc175.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc175.aspx.vb">
+      <DependentUpon>mdsrc175.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc180.aspx.designer.vb">
+      <DependentUpon>mdsrc180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc180.aspx.vb">
+      <DependentUpon>mdsrc180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc190.aspx.designer.vb">
+      <DependentUpon>mdsrc190.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc190.aspx.vb">
+      <DependentUpon>mdsrc190.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc191.aspx.designer.vb">
+      <DependentUpon>mdsrc191.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc191.aspx.vb">
+      <DependentUpon>mdsrc191.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc200.aspx.designer.vb">
+      <DependentUpon>mdsrc200.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc200.aspx.vb">
+      <DependentUpon>mdsrc200.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc210.aspx.designer.vb">
+      <DependentUpon>mdsrc210.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc210.aspx.vb">
+      <DependentUpon>mdsrc210.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc220.aspx.designer.vb">
+      <DependentUpon>mdsrc220.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc220.aspx.vb">
+      <DependentUpon>mdsrc220.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc230.aspx.designer.vb">
+      <DependentUpon>mdsrc230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc230.aspx.vb">
+      <DependentUpon>mdsrc230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc240.aspx.designer.vb">
+      <DependentUpon>mdsrc240.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc240.aspx.vb">
+      <DependentUpon>mdsrc240.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc250.aspx.designer.vb">
+      <DependentUpon>mdsrc250.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc250.aspx.vb">
+      <DependentUpon>mdsrc250.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc260.aspx.designer.vb">
+      <DependentUpon>mdsrc260.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc260.aspx.vb">
+      <DependentUpon>mdsrc260.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc270.aspx.designer.vb">
+      <DependentUpon>mdsrc270.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc270.aspx.vb">
+      <DependentUpon>mdsrc270.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list\mdsrc285.aspx.designer.vb">
+      <DependentUpon>mdsrc285.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list\mdsrc285.aspx.vb">
+      <DependentUpon>mdsrc285.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas010.aspx.designer.vb">
+      <DependentUpon>mdmas010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas010.aspx.vb">
+      <DependentUpon>mdmas010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas020.aspx.designer.vb">
+      <DependentUpon>mdmas020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas020.aspx.vb">
+      <DependentUpon>mdmas020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas025.aspx.designer.vb">
+      <DependentUpon>mdmas025.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas025.aspx.vb">
+      <DependentUpon>mdmas025.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas030.aspx.designer.vb">
+      <DependentUpon>mdmas030.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas030.aspx.vb">
+      <DependentUpon>mdmas030.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas035.aspx.designer.vb">
+      <DependentUpon>mdmas035.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas035.aspx.vb">
+      <DependentUpon>mdmas035.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas037.aspx.designer.vb">
+      <DependentUpon>mdmas037.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas037.aspx.vb">
+      <DependentUpon>mdmas037.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas040.aspx.designer.vb">
+      <DependentUpon>mdmas040.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas040.aspx.vb">
+      <DependentUpon>mdmas040.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas045.aspx.designer.vb">
+      <DependentUpon>mdmas045.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas045.aspx.vb">
+      <DependentUpon>mdmas045.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas050.aspx.designer.vb">
+      <DependentUpon>mdmas050.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas050.aspx.vb">
+      <DependentUpon>mdmas050.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas055.aspx.designer.vb">
+      <DependentUpon>mdmas055.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas055.aspx.vb">
+      <DependentUpon>mdmas055.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas060.aspx.designer.vb">
+      <DependentUpon>mdmas060.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas060.aspx.vb">
+      <DependentUpon>mdmas060.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas0601.aspx.designer.vb">
+      <DependentUpon>mdmas0601.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas0601.aspx.vb">
+      <DependentUpon>mdmas0601.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas070.aspx.designer.vb">
+      <DependentUpon>mdmas070.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas070.aspx.vb">
+      <DependentUpon>mdmas070.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas080.aspx.designer.vb">
+      <DependentUpon>mdmas080.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas080.aspx.vb">
+      <DependentUpon>mdmas080.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas0801.aspx.designer.vb">
+      <DependentUpon>mdmas0801.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas0801.aspx.vb">
+      <DependentUpon>mdmas0801.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas090.aspx.designer.vb">
+      <DependentUpon>mdmas090.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas090.aspx.vb">
+      <DependentUpon>mdmas090.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas0901.aspx.designer.vb">
+      <DependentUpon>mdmas0901.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas0901.aspx.vb">
+      <DependentUpon>mdmas0901.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas100.aspx.designer.vb">
+      <DependentUpon>mdmas100.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas100.aspx.vb">
+      <DependentUpon>mdmas100.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1001.aspx.designer.vb">
+      <DependentUpon>mdmas1001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1001.aspx.vb">
+      <DependentUpon>mdmas1001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas110.aspx.designer.vb">
+      <DependentUpon>mdmas110.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas110.aspx.vb">
+      <DependentUpon>mdmas110.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1101.aspx.designer.vb">
+      <DependentUpon>mdmas1101.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1101.aspx.vb">
+      <DependentUpon>mdmas1101.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas120.aspx.designer.vb">
+      <DependentUpon>mdmas120.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas120.aspx.vb">
+      <DependentUpon>mdmas120.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1201.aspx.designer.vb">
+      <DependentUpon>mdmas1201.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1201.aspx.vb">
+      <DependentUpon>mdmas1201.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas130.aspx.designer.vb">
+      <DependentUpon>mdmas130.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas130.aspx.vb">
+      <DependentUpon>mdmas130.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas140.aspx.designer.vb">
+      <DependentUpon>mdmas140.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas140.aspx.vb">
+      <DependentUpon>mdmas140.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1401.aspx.designer.vb">
+      <DependentUpon>mdmas1401.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1401.aspx.vb">
+      <DependentUpon>mdmas1401.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas150.aspx.designer.vb">
+      <DependentUpon>mdmas150.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas150.aspx.vb">
+      <DependentUpon>mdmas150.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1501.aspx.designer.vb">
+      <DependentUpon>mdmas1501.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1501.aspx.vb">
+      <DependentUpon>mdmas1501.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas152.aspx.designer.vb">
+      <DependentUpon>mdmas152.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas152.aspx.vb">
+      <DependentUpon>mdmas152.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas155.aspx.designer.vb">
+      <DependentUpon>mdmas155.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas155.aspx.vb">
+      <DependentUpon>mdmas155.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas160.aspx.designer.vb">
+      <DependentUpon>mdmas160.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas160.aspx.vb">
+      <DependentUpon>mdmas160.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas170.aspx.designer.vb">
+      <DependentUpon>mdmas170.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas170.aspx.vb">
+      <DependentUpon>mdmas170.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas1701.aspx.designer.vb">
+      <DependentUpon>mdmas1701.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas1701.aspx.vb">
+      <DependentUpon>mdmas1701.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas180.aspx.designer.vb">
+      <DependentUpon>mdmas180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas180.aspx.vb">
+      <DependentUpon>mdmas180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas190.aspx.designer.vb">
+      <DependentUpon>mdmas190.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas190.aspx.vb">
+      <DependentUpon>mdmas190.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas200.aspx.designer.vb">
+      <DependentUpon>mdmas200.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas200.aspx.vb">
+      <DependentUpon>mdmas200.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mdmas210.aspx.designer.vb">
+      <DependentUpon>mdmas210.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mdmas210.aspx.vb">
+      <DependentUpon>mdmas210.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\WebForm4.aspx.designer.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\WebForm4.aspx.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdgty020.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdgty0301.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdgty0302.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdgty0601.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdgty0602.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdhst010.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdhst020.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdhst150.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk030.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk040.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk1701.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk1702.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk1703.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk1704.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdjsk1705.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdkei030.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdlst010.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdlst0101.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdlst0201.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdlst0202.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdlst030.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdmas170.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdnyk0301.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdnyk0302.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdnyk040.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdsnt020.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdsnt030.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna0201.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna0202.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna0203.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna0204.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna060.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna070.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna0702.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtna110.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0201.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0202.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0203.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0204.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0205.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk0206.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdtyk040.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0301.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0302.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0303.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0401.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0402.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\report\mdzai0701.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="system\mdclalarm.aspx.designer.vb">
+      <DependentUpon>mdclalarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdclalarm.aspx.vb">
+      <DependentUpon>mdclalarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mdclerror.aspx.designer.vb">
+      <DependentUpon>mdclerror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdclerror.aspx.vb">
+      <DependentUpon>mdclerror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mdcllogin.aspx.designer.vb">
+      <DependentUpon>mdcllogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdcllogin.aspx.vb">
+      <DependentUpon>mdcllogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mdcllogout.aspx.designer.vb">
+      <DependentUpon>mdcllogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdcllogout.aspx.vb">
+      <DependentUpon>mdcllogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mdclmenu.aspx.designer.vb">
+      <DependentUpon>mdclmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdclmenu.aspx.vb">
+      <DependentUpon>mdclmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mdclpassword.aspx.designer.vb">
+      <DependentUpon>mdclpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mdclpassword.aspx.vb">
+      <DependentUpon>mdclpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system\mderror.aspx.designer.vb">
+      <DependentUpon>mderror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system\mderror.aspx.vb">
+      <DependentUpon>mderror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\refresh.aspx.designer.vb">
+      <DependentUpon>refresh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp\refresh.aspx.vb">
+      <DependentUpon>refresh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utility\mdutl010.aspx.designer.vb">
+      <DependentUpon>mdutl010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utility\mdutl010.aspx.vb">
+      <DependentUpon>mdutl010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utility\mdutl0101.aspx.designer.vb">
+      <DependentUpon>mdutl0101.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utility\mdutl0101.aspx.vb">
+      <DependentUpon>mdutl0101.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Old_App_Code\MdtykCommon.vb" />
+    <Compile Include="Old_App_Code\MedicalCommon.vb" />
+    <Compile Include="Old_App_Code\MedicalDataOracle.vb" />
+    <Compile Include="Old_App_Code\MedicalError.vb" />
+    <Compile Include="Old_App_Code\MedicalLog.vb" />
+    <Compile Include="Old_App_Code\MedicalScript.vb" />
+    <Compile Include="include\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdgty020.resx">
+      <DependentUpon>mdgty020.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdgty0301.resx">
+      <DependentUpon>mdgty0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdgty0302.resx">
+      <DependentUpon>mdgty0302.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdgty0601.resx">
+      <DependentUpon>mdgty0601.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdgty0602.resx">
+      <DependentUpon>mdgty0602.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdhst010.resx">
+      <DependentUpon>mdhst010.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdhst020.resx">
+      <DependentUpon>mdhst020.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdhst150.resx">
+      <DependentUpon>mdhst150.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk030.resx">
+      <DependentUpon>mdjsk030.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk040.resx">
+      <DependentUpon>mdjsk040.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk1701.resx">
+      <DependentUpon>mdjsk1701.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk1702.resx">
+      <DependentUpon>mdjsk1702.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk1703.resx">
+      <DependentUpon>mdjsk1703.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk1704.resx">
+      <DependentUpon>mdjsk1704.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdjsk1705.resx">
+      <DependentUpon>mdjsk1705.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdkei030.resx">
+      <DependentUpon>mdkei030.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdlst010.resx">
+      <DependentUpon>mdlst010.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdlst0101.resx">
+      <DependentUpon>mdlst0101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdlst0201.resx">
+      <DependentUpon>mdlst0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdlst0202.resx">
+      <DependentUpon>mdlst0202.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdlst030.resx">
+      <DependentUpon>mdlst030.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdmas170.resx">
+      <DependentUpon>mdmas170.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdnyk0301.resx">
+      <DependentUpon>mdnyk0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdnyk0302.resx">
+      <DependentUpon>mdnyk0302.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdnyk040.resx">
+      <DependentUpon>mdnyk040.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdsnt020.resx">
+      <DependentUpon>mdsnt020.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdsnt030.resx">
+      <DependentUpon>mdsnt030.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna0201.resx">
+      <DependentUpon>mdtna0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna0202.resx">
+      <DependentUpon>mdtna0202.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna0203.resx">
+      <DependentUpon>mdtna0203.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna0204.resx">
+      <DependentUpon>mdtna0204.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna060.resx">
+      <DependentUpon>mdtna060.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna070.resx">
+      <DependentUpon>mdtna070.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna0702.resx">
+      <DependentUpon>mdtna0702.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtna110.resx">
+      <DependentUpon>mdtna110.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk0201.resx">
+      <DependentUpon>mdtyk0201.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk0202.resx">
+      <DependentUpon>mdtyk0202.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk0203.resx">
+      <DependentUpon>mdtyk0203.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk0205.resx">
+      <DependentUpon>mdtyk0205.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk0206.resx">
+      <DependentUpon>mdtyk0206.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdtyk040.resx">
+      <DependentUpon>mdtyk040.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0301.resx">
+      <DependentUpon>mdzai0301.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0302.resx">
+      <DependentUpon>mdzai0302.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0303.resx">
+      <DependentUpon>mdzai0303.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0401.resx">
+      <DependentUpon>mdzai0401.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0402.resx">
+      <DependentUpon>mdzai0402.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_App_Code\report\mdzai0701.resx">
+      <DependentUpon>mdzai0701.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="medical.ruleset" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51368</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
