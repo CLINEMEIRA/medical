@@ -41,7 +41,7 @@
         }
         if (results[0] == "k"){
             document.getElementById(results[2]).innerText = results[1];
-            //休日の時は残業を選択できなくする
+            //休日の時は残業を選択できなくするGitテスト
             var drpK = results[2].replace("lblKei", "drpKei");
             var drpZ1 = results[2].replace("lblKei", "drpZan1");
             var drpZ2 = results[2].replace("lblKei", "drpZan2");
